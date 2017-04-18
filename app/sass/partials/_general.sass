@@ -1,0 +1,29 @@
+$accent: #df1f26
+=linear-gradient($color1)  
+	background-image: linear-gradient(to bottom, lighten($color1, 10%) 0%, darken($color1, 10%) 100%)
+
+body
+	background: #eee
+	font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif
+	
+
+.btn 
+	color: #fff
+	+linear-gradient($accent)
+	border-radius: 3px
+	display: inline-block
+	padding: 6px 34px
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 12px
+
+.container 
+	width: 954px
+	margin: 0 auto
+.main
+	display: flex
+	.sidebar
+		flex-basis: 25%
+		border-right: 1px solid #bebebe
+	.content
+		flex-basis: 75%
